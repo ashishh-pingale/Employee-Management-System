@@ -302,6 +302,6 @@ export const setLocalStorage = ()=>{
 export const getLocalStorage = ()=>{
     const employees = JSON.parse(localStorage.getItem('employee'))
     const admins = JSON.parse(localStorage.getItem('admin'))
-    console.log(employees,admins)
+    return({employees,admins})
     
 }
